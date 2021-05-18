@@ -13,12 +13,20 @@ const App = (props) => {
     window.Twitch ? window.Twitch.ext : null
   );
 
+  const [schedule, setSchedule] = useState([
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+  ]);
   const [finishedLoading, setfinishedLoading] = useState(false);
   const [theme, setTheme] = useState("light");
   const [isVisible, setIsVisible] = useState(true);
 
-  const [timezone, setTimezone] = useState("");
-  const [schedule, setSchedule] = useState([]);
+  const [timezone, setTimezone] = useState("Europe/London");
 
   const contextUpdate = (context, delta) => {
     if (delta.includes("theme")) {
@@ -59,8 +67,12 @@ const App = (props) => {
       } catch (e) {
         config = [];
       }
-      setTimezone(config.timezone);
-      setSchedule(config.schedule);
+      setTimezone(config.timezone ? config.timezone : "Europe/London");
+      setSchedule(
+        config.schedule
+          ? config.schedule
+          : [null, null, null, null, null, null, null]
+      );
     });
   }, []);
 

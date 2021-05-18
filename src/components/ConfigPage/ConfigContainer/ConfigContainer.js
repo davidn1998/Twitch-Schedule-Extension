@@ -5,13 +5,13 @@ import TimezoneSelect from "react-timezone-select";
 import "./ConfigContainer.css";
 
 const ConfigContainer = ({ schedule, timezone, saveConfig }) => {
-  const [mon, setMon] = useState(schedule[0]);
-  const [tue, setTue] = useState(schedule[1]);
-  const [wed, setWed] = useState(schedule[2]);
-  const [thu, setThu] = useState(schedule[3]);
-  const [fri, setFri] = useState(schedule[4]);
-  const [sat, setSat] = useState(schedule[5]);
-  const [sun, setSun] = useState(schedule[6]);
+  const [mon, setMon] = useState(schedule ? schedule[0] : null);
+  const [tue, setTue] = useState(schedule ? schedule[1] : null);
+  const [wed, setWed] = useState(schedule ? schedule[2] : null);
+  const [thu, setThu] = useState(schedule ? schedule[3] : null);
+  const [fri, setFri] = useState(schedule ? schedule[4] : null);
+  const [sat, setSat] = useState(schedule ? schedule[5] : null);
+  const [sun, setSun] = useState(schedule ? schedule[6] : null);
 
   const [selectedTimezone, setSelectedTimezone] = useState(
     timezone

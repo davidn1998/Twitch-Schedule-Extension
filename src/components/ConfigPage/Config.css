@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin');
+
+.Config{
+    font-family: 'Cabin', sans-serif;
+}
+
+select option {
+    color:#232127 !important;
+}
+
+.Config-light, .Config-light input, .Config-light select{
+    color:#232127 !important;
+}
+
+.Config-dark, .Config-dark input, .Config-dark select{
+    color:#e5e3e8 !important;
+}

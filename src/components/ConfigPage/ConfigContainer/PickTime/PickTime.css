@@ -1,0 +1,10 @@
+.time-picker {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.time-picker p {
+    font-weight: 700;
+}

@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin');
+
+.config-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.config-title {
+    font-size: 20px;
+}
+
+.subtitle {
+    font-size: 16px;
+}
+
+.css-2b097c-container {
+    color: black;
+}
+
+.react-time-picker__wrapper {
+    border-radius: 10px !important;
+    padding: 0.5rem;
+}
+
+.time-picker {
+    display: flex;
+}
+
+.time-picker p {
+    width: 100px;
+}
+
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.form-button {
+    font-family: 'Cabin', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    margin: 0.5rem;
+    transition: 0.25s;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    font-weight: 600;
+}
+
+.form-button:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+}
